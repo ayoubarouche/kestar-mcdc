@@ -1,10 +1,6 @@
-# created by kestar hacker ( arouche ayoub )
+# created by kestar ( arouche ayoub )
 
 import ast
-from typing import final
-
-
-
 
 # get all the variable names in the expression : 
 generale_result = []
@@ -138,6 +134,7 @@ if __name__ == "__main__":
     formula = formula.replace('&&', ' and ').replace('||', ' or ').replace('!', ' not ')
     variables = get_variables(formula)
     print("les test case names sont : ",end="")
+    variables.sort()
     print(variables)
 
     # generating all the test cases that we should do 
