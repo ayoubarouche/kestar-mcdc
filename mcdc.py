@@ -31,10 +31,10 @@ def generate_all_test_cases(length , current_variable , result):
         generale_result.append(result)
     else : 
         adding_true_value_to_result = result.copy()
-        adding_true_value_to_result.append(True)
+        adding_true_value_to_result.append(False)
         generate_all_test_cases(length , current_variable+1 , adding_true_value_to_result) 
         adding_false_value_to_result = result.copy()
-        adding_false_value_to_result.append(False)
+        adding_false_value_to_result.append(True)
         generate_all_test_cases(length , current_variable+1 , adding_false_value_to_result)
     
 # add the vars dynamically to python ( to use them after )
